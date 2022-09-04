@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+<!--  SAME BELOW, INCLUDE SUBDIRS(PROBABLY)  -->
+    <files-path
+        name="files"
+        path="/"
+        />
+<!--  SAME ABOVE, DON'T INCLUDE SUBDIRS(PROBABLY)  -->
+<!--    <files-path-->
+<!--        name="files"-->
+<!--        path="."-->
+<!--        />-->
+<!--   DOES NOT WORK -->
+<!--    <files-path-->
+<!--        name="/"-->
+<!--        path="allfiles"-->
+<!--        />-->
+<!--  WORKS, DIFFERENT FILENAME ENCODING   -->
+<!--    <files-path-->
+<!--        name="."-->
+<!--        path="."-->
+<!--        />-->
+<!--  WORKS, DIFFERENT FILENAME ENCODING  -->
+<!--    <files-path-->
+<!--        name="."-->
+<!--        path="/"-->
+<!--        />-->
+</paths>

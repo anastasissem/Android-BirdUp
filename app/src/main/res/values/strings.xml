@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">BirdUp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">BirdUp</string>
+    <string name="nav_header_subtitle">anmessis@inf.uth.gr</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    // APP BAR/MAIN STRINGS
+    <string name="menu_home">Home</string>
+    <string name="menu_recordings">Recordings</string>
+    <string name="menu_about">About</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_rate">Rate App</string>
+    <string name="import_text">Import Recording</string>
+
+    //HOME STRINGS
+    <string name="start_recording">Start</string>
+    <string name="stop_recording">Stop</string>
+    <string name="about_app">Welcome to BirdUp!\n\nCurious about birdsongs and what song belongs to
+    what bird? BirdUp can help you find out by recording the birdsong and recognizing up to 50 bird
+    species found across Europe. \nSimply record the song and the app will do the rest.\n\nNow go
+    out and discover some of nature\'s best singers!</string>
+
+    //FEEDBACK STRINGS
+    <string name="subject">Subject</string>
+    <string name="message">Write your message . . .</string>
+    <string name="send">Send email</string>
+    <string name="recipient">anmessis@inf.uth.gr</string>
+    <string name="popup_title">Save Recording?</string>
+    <string name="popup_save_btn">SAVE</string>
+    <string name="popup_cancel_btn">CANCEL</string>
+
+    // RECORDINGS STRINGS
+    <string name="initText">Here you can save your recordings and play them anytime</string>
+    <string name="rate_app">Rate App</string>
+</resources>

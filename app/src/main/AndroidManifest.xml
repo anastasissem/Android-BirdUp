@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.birdup">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+<!--  QUERIES ELEMENT WAS ADDED IN ANDROID 11 AND IS REQUIRED IN ORDER TO INTERACT WITH OTHER APPS -->
+    <queries>
+        <package android:name="com.example.birdup" />
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:scheme="uri" />
+        </intent>
+<!--        <provider android:authorities="list" />-->
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kingfisher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BirdUp">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.BirdUp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--FileProvider - used to securely share recordings-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+<!--            <grant-uri-permission android:path="/data/user/0/com.example.birdup/files/"-->
+<!--                />-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

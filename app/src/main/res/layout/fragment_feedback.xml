@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1AA5EF"
+    android:backgroundTint="#1AA5EF"
+    android:visibility="visible"
+    tools:context=".ui.feedback.FeedbackFragment"
+    tools:visibility="visible">
+
+    <EditText
+        android:id="@+id/feedback_recipient"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="#5EAFDA"
+        android:foreground="@drawable/edges"
+        android:foregroundTint="#C6B40F"
+        android:autofillHints=" anmessis@inf.uth.gr"
+        android:textAlignment="textStart"
+        android:textColor="#395053"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/feedback_subject"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="#5EAFDA"
+        android:foreground="@drawable/edges"
+        android:foregroundTint="#C6B40F"
+        android:hint=" Subject"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#395053"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_recipient"
+        android:inputType="textEmailSubject" />
+
+    <EditText
+        android:id="@+id/feedback_message"
+        android:layout_width="388dp"
+        android:layout_height="286dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="312dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="#5EAFDA"
+        android:foreground="@drawable/edges"
+        android:foregroundTint="#C6B40F"
+        android:hint=" Write your message . . ."
+        android:textColor="#395053"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/feedback_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C6B40F"
+        android:text="@string/send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_message"
+        app:layout_constraintVertical_bias="0.03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
